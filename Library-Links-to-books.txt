@@ -1,0 +1,52 @@
+Library Links
+
+CS 4393
+	[Bis] Matt Bishop, Introduction to Computer Security, Addison-Wesley,
+	2004. ISBN 0-321-24744-2.
+	
+	Library
+		https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma99122779701421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,Introduction%20to%20Computer%20Security&sortby=rank&offset=0
+	Safari
+		https://www.safaribooksonline.com/library/view/introduction-to-computer/0321247442/
+	
+	[KPS] Charlie Kaufman, Radia Perlman, and Mike Speciner, Network
+	Security—Private Communication in a Public World, 2nd Edition. Prentice
+	Hall, 2002. ISBN 978-0-13-046019-6.
+	
+	Library
+		https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9980649701421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,Mike%20Speciner,%20Network%20Security%E2%80%94Private%20Communication%20in%20a%20Public%20World&sortby=rank&offset=0
+	Safari
+		https://www.safaribooksonline.com/library/view/network-security-private/9780137155880/pr02.html
+		
+	[SB] William Stallings and Lawrie Brown, Computer Security - Principles and Practice 3rd Ed., 
+	Pearson 2016, ISBN 0-13-377392-2.
+	
+	Library
+	
+	Safari
+
+	
+CS 3162
+	A Gift of Fire
+	Library
+	https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9995593401421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,A%20Gift%20of%20Fire,&sortby=rank&offset=0
+	
+
+GOVT 2305
+	Readings in American National Government.
+	Library
+	https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9961418501421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,Readings%20in%20American%20National%20Government&offset=0
+	
+	
+HIST 1302
+
+	Henretta, James A. et, al. America’s History. Vol. 2, 9th Edition (value)
+	Library
+	https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9927609711101421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&isFrbr=true&tab=LibraryCatalog&query=any,contains,America%E2%80%99s%20History.%20Vol.%202,%209th%20Edition&sortby=date_d&facet=frbrgroupid,include,9011067629622884636&offset=0
+	
+	Kennedy, Robert. Thirteen Days: A Memoir of the Cuban Missile Crisis
+	Library
+	https://utdallas.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9925436201421&context=L&vid=01UT_DALLAS:UTDALMA&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,Thirteen%20Days:%20A%20Memoir%20of%20the%20Cuban%20Missile%20Crisis&sortby=rank&offset=0
+	
+CS-4396.001
+SE-4485.001
