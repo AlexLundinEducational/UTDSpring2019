@@ -10,7 +10,10 @@
 :: common block between these batch processes to save folder information
 set "folderThatCalled=%cd%"
 cd ..\
+
 set "sourceRepositoryRoot=%cd%"
+
+echo %sourceRepositoryRoot%
 :: save folder name from current directory
 for %%a in (.) do set sourceFolderName=%%~na
 
@@ -40,8 +43,10 @@ echo.
 echo Zip started
 echo ...
 @echo off
-set "folderPathToZipUp=%CdriveSourceFolder%"
-cd "%folderThatCalled%"
-call "%CD%\batch-processes-zip-folder-to-location.bat" "%folderPathToZipUp%" "%locationToZipTo%"
+echo %folderPathToZipUp%
+echo %locationToZipTo%
+timeout -1
+call "%CD%\batch-processes\zip-folder-to-location.bat" "%folderPathToZipUp%" "%locationToZipTo%"
+timeout -1
 echo Zip complete
 goto :EOF

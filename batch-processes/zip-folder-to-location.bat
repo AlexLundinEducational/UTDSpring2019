@@ -19,7 +19,7 @@ set "locationToZipTo=%~2"
 echo Zipping folder %folderPathToZipUp% to this location:
 echo %locationToZipTo%
 
-call "%CD%\string-constants.bat"
+all "%CD%\batch-processes\string-constants.bat"
 
 set "folderThatCalled=%cd%"
 cd ..\..
@@ -36,4 +36,4 @@ set data=%d%
 set datetimef=%date:~-4%_%date:~3,3%_%date:~7,2%__%time:~0,2%_%time:~3,2%
 
 :: use 7Zip to create the zip file
-"%ProgramFilesInstallPath%\7-Zip\7z.exe" a -tzip "C:\WS_Blocks_Zip_Backups\%folderNameOnly%_%datetimef%.zip" "%folderPathToZipUp%*" > NUL 2>&1
+"%ProgramFilesInstallPath%\7-Zip\7z.exe" a -tzip "%locationToZipTo%\%folderNameOnly%_%datetimef%.zip"" "%folderPathToZipUp%*" > NUL 2>&1
