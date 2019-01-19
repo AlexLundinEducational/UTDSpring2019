@@ -16,15 +16,15 @@ set "folderPathToZipUp=%~1"
 set "locationToZipTo=%~2"
 
 @echo off
-echo Zipping folder %folderPathToZipUp% to this location:
-echo %locationToZipTo%
+REM echo Zipping folder %folderPathToZipUp% to this location:
+REM echo %locationToZipTo%
 
-all "%CD%\batch-processes\string-constants.bat"
+call "%CD%\batch-processes\string-constants.bat"
 
 set "folderThatCalled=%cd%"
-cd ..\..
-:: set current directory to the folderPathToZipUp parameter
+
 cd %folderPathToZipUp%
+
 :: save folder name from current directory
 for %%a in (.) do set folderNameOnly=%%~na
 
@@ -35,5 +35,7 @@ set data=%d%
 
 set datetimef=%date:~-4%_%date:~3,3%_%date:~7,2%__%time:~0,2%_%time:~3,2%
 
+set "zipFileName=%locationToZipTo%%folderNameOnly%_%datetimef%.zip"
+
 :: use 7Zip to create the zip file
-"%ProgramFilesInstallPath%\7-Zip\7z.exe" a -tzip "%locationToZipTo%\%folderNameOnly%_%datetimef%.zip"" "%folderPathToZipUp%*" > NUL 2>&1
+"%ProgramFilesInstallPath%\7-Zip\7z.exe" a -tzip "%zipFileName%" "%folderPathToZipUp%*" > NUL 2>&1

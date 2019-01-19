@@ -17,14 +17,29 @@ echo %sourceRepositoryRoot%
 :: save folder name from current directory
 for %%a in (.) do set sourceFolderName=%%~na
 
-set "CdriveSourceFolder=C:\%sourceFolderName%"
-set "networkLab=%CdriveSourceFolder%\3.1-CS-4396.001"
-set "networkSec=%CdriveSourceFolder%\2.2-CS-4393.001"
-set "softwareProj=%CdriveSourceFolder%\3.2-SE-4485.001"
+set "CdriveSourceFolder=%sourceRepositoryRoot%"
+set "networkLab=%CdriveSourceFolder%\3.1-CS-4396.001\"
+set "networkSec=%CdriveSourceFolder%\2.2-CS-4393.001\"
+set "softwareProj=%CdriveSourceFolder%\3.2-SE-4485.001\"
 
 set "zipbackups=%CdriveSourceFolder%\zip-backups\"
 
+echo.
+echo Zips started
+echo ...
+@echo off
+
 CALL :ZIPCONTENTS %networkLab% %zipbackups%
+set "zipbackups=%CdriveSourceFolder%\zip-backups\"
+
+cd %sourceRepositoryRoot%
+CALL :ZIPCONTENTS %networkSec% %zipbackups%
+set "zipbackups=%CdriveSourceFolder%\zip-backups\"
+
+cd %sourceRepositoryRoot%
+CALL :ZIPCONTENTS %softwareProj% %zipbackups%
+
+echo Zips complete
 
 REM execution always reaches here
 REM this line exits the program with the EXIT /B
@@ -39,14 +54,7 @@ EXIT /B
 :: save the parameters into the necessary variables
 set "folderPathToZipUp=%~1"
 set "locationToZipTo=%~2"
-echo.
-echo Zip started
-echo ...
-@echo off
 echo %folderPathToZipUp%
 echo %locationToZipTo%
-timeout -1
 call "%CD%\batch-processes\zip-folder-to-location.bat" "%folderPathToZipUp%" "%locationToZipTo%"
-timeout -1
-echo Zip complete
 goto :EOF

@@ -11,6 +11,3 @@ set "AutoCADLaunguageSwitchArg=en-US"
 set "AutoCADProductSwitchArg=ACAD"
 
 set "browserName=chrome"
-
-set "locationToZipTo=C:\WS_Blocks_Zip_Backups\"
-set "locationToUnZipTo=%locationToZipTo%Unziped_Folders\"
