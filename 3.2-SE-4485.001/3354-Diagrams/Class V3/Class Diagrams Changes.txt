@@ -1,0 +1,38 @@
+Class Diagram Changes
+	Additions
+		Class
+			Model
+			Controller
+			View
+			Formatter
+		Relation
+			Model (has a) UserDatabase (and still exists without one)
+			Controller (uses) Formatter
+
+		Method
+			View - getView
+			View - setView
+		Attribute
+			None
+			
+	Deleletions
+		Class Deletions
+			MakeCalendar replaced with Controller
+		Relation
+			None
+		Method
+			Controller - getView
+			Event - getJSON
+		Attribute
+			Event - eventJSON
+			
+	Modifications
+		Class
+			Login (inherites) fields from User
+			View (uses) Login
+		Relation
+			None
+		Method
+			None
+		Attribute
+			None
